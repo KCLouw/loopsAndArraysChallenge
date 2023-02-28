@@ -13,11 +13,12 @@ for(x of tasks){
 //Add your code below
 
 tasks = ["Work", "Study", "Football", "Rest", "Cook", "Game", "Read", "Phone-Call", "Exercise", "Sleep"];
-for(x = 1; x <= 9; x++){
-    let sum = x + tasks.forEach(x);
+for(x in tasks){
+    sum = 0;
+    x++
+    sum += x
     console.log(sum);
-    
-};
+}
 
 //Activity 3 - Using the tasks variable created above
 //Create a loop that performs the 15 times table
