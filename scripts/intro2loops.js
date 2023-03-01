@@ -33,25 +33,40 @@ console.log(sum);
 //Leading up to the "length" of your tasks variable
 //Add your code below
 
-
+let multiArray = [];
+for(x in tasks){
+    x++
+    let newMulti = x * 15;
+    multiArray.push(newMulti);
+}
+console.log(multiArray);
 
 
 //Activity 4 - Edit your code in activity 3, by creating an array called timesTable
 //And store each value of the your fifteen times table in it
 //Add your code below
 
+let timesTable = multiArray;
+console.log(timesTable);
 
 //Activity 5 - Using the array you created in the Activity 4, loop through the array and print each value to the console.
 //Add your code below
 
+for(x of timesTable){
+    console.log(x);
+}
 
 //Activty 6 - Use the .reduce() built-in method to calculate the average of the array created in Activity 4.
 //Add your code below
 
+let average = timesTable.reduce(function(x,y){return x + y}) / timesTable.length;
+console.log(average); 
 
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function
 //Add your code below
+
+
 
 //Create a "for of" loop, looping through the values of your tasks variable created in activity 1
 //console.log the output
