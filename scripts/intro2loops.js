@@ -13,25 +13,18 @@ for(x of tasks){
 //Add your code below
 
 tasks = ["Work", "Study", "Football", "Rest", "Cook", "Game", "Read", "Phone-Call", "Exercise", "Sleep"];
-/*for(x in tasks){
-    sum = 0;
-    x++
-    sum += x
-    console.log(sum);
-}*/
 const newArr = [];
 for(x in tasks){
     x++
-    newArr.push(x);
-    
+    newArr.push(parseInt(x));
 };
 console.log(newArr);
-let sum = 0;
-    for(x = 0; x <= newArr.length; x++){
-        let newSum = sum += newArr[x];
-        console.log(newSum);
-    }
 
+let sum = 0;
+    for(x = 0; x <= newArr[x]; x++){
+        sum += newArr[x];
+    };
+console.log(sum);
 
 
 
@@ -39,6 +32,8 @@ let sum = 0;
 //Create a loop that performs the 15 times table
 //Leading up to the "length" of your tasks variable
 //Add your code below
+
+
 
 
 //Activity 4 - Edit your code in activity 3, by creating an array called timesTable
