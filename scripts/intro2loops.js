@@ -65,13 +65,27 @@ console.log(average);
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function
 //Add your code below
+let newAve = 0;
+for(x of timesTable){
+    newAve += x;
+};
 
+let otherAverage = newAve / timesTable.length;
 
+console.log(otherAverage);
 
 //Create a "for of" loop, looping through the values of your tasks variable created in activity 1
 //console.log the output
 //Add your code below
 
+for(x of tasks){
+    console.log(x + " ");
+};
+
 //Try to replicate the above activity by using a "for in" loop instead
 //Does this work? can you understand and explain why it displays what it displays?
 //Add your code below
+
+for(x in tasks){
+    console.log(x + " ");
+};
